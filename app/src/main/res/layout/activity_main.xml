@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aula 10"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 1"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="16dp"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/entrada1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:textSize="16sp"
+        android:backgroundTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 2"
+        app:layout_constraintTop_toBottomOf="@id/entrada1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="16dp"
+        android:textSize="14sp"/>
+
+
+    <EditText
+        android:id="@+id/entrada2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui"
+        android:textSize="16sp"
+        android:backgroundTint="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:layout_marginHorizontal="16dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 3"
+        app:layout_constraintTop_toBottomOf="@+id/entrada2"
+        app:layout_constraintStart_toStartOf="parent"/>
+    
+    
+
+    <Button
+        android:id="@+id/btnExecutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXECUTAR"
+        app:layout_constraintTop_toBottomOf="@id/input2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/outputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saída:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnExecutar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        app:layout_constraintTop_toBottomOf="@id/outputLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
