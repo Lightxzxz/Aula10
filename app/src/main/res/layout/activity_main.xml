@@ -1,112 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F8F8F8">
 
     <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aula 10"
-        android:textStyle="bold"
+        android:text="Aula 10 - Treinando Layouts"
         android:textSize="18sp"
-        android:textColor="#000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp"/>
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor 1"
-        app:layout_constraintTop_toBottomOf="@id/titulo"
-        app:layout_constraintStart_toStartOf="parent"
-        android:paddingStart="16dp"
-        android:textSize="14sp"/>
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"/>
 
     <EditText
-        android:id="@+id/entrada1"
-        android:layout_width="0dp"
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite aqui"
-        android:textSize="16sp"
-        android:backgroundTint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text1"
-        android:layout_marginHorizontal="16dp"/>
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor 2"
-        app:layout_constraintTop_toBottomOf="@id/entrada1"
-        app:layout_constraintStart_toStartOf="parent"
-        android:paddingStart="16dp"
-        android:textSize="14sp"/>
-
+        android:hint="Digite o primeiro número"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
 
     <EditText
-        android:id="@+id/entrada2"
-        android:layout_width="0dp"
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Digite aqui"
-        android:textSize="16sp"
-        android:backgroundTint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2"
-        android:layout_marginHorizontal="16dp"/>
+        android:hint="Digite o segundo número"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/num3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valor 3"
-        app:layout_constraintTop_toBottomOf="@+id/entrada2"
-        app:layout_constraintStart_toStartOf="parent"/>
-    
-    
+        android:hint="Digite o terceiro número"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/num4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o quarto número"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
 
     <Button
         android:id="@+id/btnExecutar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EXECUTAR"
-        app:layout_constraintTop_toBottomOf="@id/input2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        android:text="Executar"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/outputLabel"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Saída:"
-        android:textStyle="bold"
+        android:text="Resultado"
         android:textSize="16sp"
-        android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@id/btnExecutar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:paddingStart="16dp"
-        android:layout_marginTop="16dp"/>
-
-    <TextView
-        android:id="@+id/outputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="18sp"
-        android:textColor="#FF0000"
-        app:layout_constraintTop_toBottomOf="@id/outputLabel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
